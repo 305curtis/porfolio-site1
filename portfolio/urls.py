@@ -16,8 +16,10 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 import jobs.views
+from django.conf import settings
+from djang.conf.urls.static import static 
 
 urlpatterns = [
     url('admin/', admin.site.urls),
     url('', jobs.views.jobs, name='home'),
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
