@@ -17,7 +17,7 @@ from django.conf.urls import url
 from django.contrib import admin
 import jobs.views
 from django.conf import settings
-from djang.conf.urls.static import static 
+from django.conf.urls.static import static 
 
 urlpatterns = [
     url('admin/', admin.site.urls),
