@@ -18,6 +18,6 @@ from django.contrib import admin
 import jobs.views
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
+    url('admin/', admin.site.urls),
     url('', jobs.views.jobs, name='home'),
 ]
